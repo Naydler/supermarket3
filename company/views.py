@@ -2,10 +2,10 @@ from rest_framework import generics
 from .models import Company
 from .serializers import CompanySerializer
 
-class ProductListCreateView(generics.ListCreateAPIView):
+class CompanyListCreateView(generics.ListCreateAPIView):
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
 
-class ProductRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class CompanyRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Company.objects.all()
     serializer_class = CompanySerializer
