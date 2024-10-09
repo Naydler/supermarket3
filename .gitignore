@@ -1,0 +1,19 @@
+# Ignorar archivos de compilación
+*.pyc
+*.class
+*.o
+
+# Ignorar directorios
+__pycache__/
+node_modules/
+venv/
+
+# Ignorar archivos de configuración
+*.env
+*.log
+
+# Ignorar archivos específicos
+secret.txt
+
+# Ignorar el archivo de base de datos SQLite
+db.sqlite3
