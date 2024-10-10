@@ -7,6 +7,7 @@
 __pycache__/
 node_modules/
 venv/
+.venv/
 
 # Ignorar archivos de configuración
 *.env
