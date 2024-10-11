@@ -13,6 +13,7 @@ class Product(models.Model):
     price_of_sell = models.DecimalField(max_digits=10, decimal_places=2)
     stock_warning = models.IntegerField()
     date = models.DateTimeField(auto_now_add=True)
-    image = models.URLField()
+    #haz que image no sea obligatorio
+    image = models.URLField(blank=True)
     #iva_category = models.IntegerField()
     #ivaCategoryId = models.ForeignKey('ivaCategory.IvaCategory', on_delete=models.CASCADE)
