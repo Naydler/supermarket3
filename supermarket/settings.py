@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "shop",
     "employee",
     "product",
+    "privileges",
 ]
 
 MIDDLEWARE = [
