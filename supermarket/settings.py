@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "employee",
     "product",
     "ivaCategory",
+    "privileges",
 ]
 
 MIDDLEWARE = [
