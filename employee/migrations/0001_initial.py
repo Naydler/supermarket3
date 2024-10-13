@@ -9,20 +9,33 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('shop', '0001_initial'),
+        ("shop", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Employee',
+            name="Employee",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=255)),
-                ('privilege', models.CharField(max_length=255)),
-                ('login', models.CharField(max_length=255)),
-                ('password', models.CharField(max_length=255)),
-                ('email', models.CharField(max_length=255)),
-                ('shopid', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='shop.shop')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=255)),
+                ("privilege", models.CharField(max_length=255, null=True)),
+                ("login", models.CharField(max_length=255)),
+                ("password", models.CharField(max_length=255)),
+                ("email", models.CharField(max_length=255)),
+                (
+                    "shopid",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="shop.shop"
+                    ),
+                ),
             ],
         ),
     ]
