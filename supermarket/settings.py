@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "shop",
     "employee",
     "product",
+    "ivaCategory",
+    "privileges",
     "supplier",
 ]
 

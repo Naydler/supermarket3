@@ -18,3 +18,9 @@ secret.txt
 
 # Ignorar el archivo de base de datos SQLite
 db.sqlite3
+
+# Ignorar todas las migraciones
+**/migrations/
+
+# Pero no ignorar el directorio de migraciones en las apps
+!**/migrations/__init__.py

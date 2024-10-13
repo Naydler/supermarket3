@@ -14,5 +14,4 @@ class Product(models.Model):
     stock_warning = models.IntegerField()
     date = models.DateTimeField(auto_now_add=True)
     image = models.URLField(blank=True)
-    #iva_category = models.IntegerField()
-    #ivaCategoryId = models.ForeignKey('ivaCategory.IvaCategory', on_delete=models.CASCADE)
+    ivaCategoryId = models.ForeignKey('ivaCategory.IvaCategory', default=None, on_delete=models.PROTECT)
