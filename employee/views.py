@@ -2,6 +2,7 @@ from django.http import HttpResponse, JsonResponse
 from rest_framework import generics
 
 from company.models import Company
+from company.serializers import CompanySerializer
 from shop.models import Shop
 from .models import Employee
 from .serializers import EmployeeSerializer
