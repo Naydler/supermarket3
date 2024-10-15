@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 # class Shop(models.Model):
@@ -15,3 +16,4 @@ class Product(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     image = models.URLField(blank=True)
     ivaCategoryId = models.ForeignKey('ivaCategory.IvaCategory', default=None, on_delete=models.PROTECT)
+    id_supplier = models.ForeignKey('supplier.Supplier',default=None,on_delete=models.PROTECT )

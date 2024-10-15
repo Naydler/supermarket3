@@ -25,4 +25,6 @@ urlpatterns = [
     path('product/', include('product.urls')),
     path('ivaCategory/', include('ivaCategory.urls')),
     path('privileges/', include('privileges.urls')),
+    path('supplier/', include('supplier.urls')),
+    
 ]
