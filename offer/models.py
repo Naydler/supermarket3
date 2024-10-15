@@ -10,3 +10,5 @@ class Offer(models.Model):
     idEmployee = models.ForeignKey('employee.Employee', on_delete=models.CASCADE)
     idShop = models.ForeignKey('shop.Shop', on_delete=models.CASCADE)
 
+    
+

@@ -8,4 +8,7 @@ class CashClosing(models.Model):
     createDate = models.DateTimeField(auto_now_add=True)
     quantity_sold_by_visa = models.IntegerField()
     quantity_sold_by_cash = models.IntegerField()
+
+    
+
     

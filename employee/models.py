@@ -18,3 +18,8 @@ class Employee (models.Model):
         if not self.password.startswith('pbkdf2_'): 
             self.password = make_password(self.password)
         super(Employee, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.name
+
+
