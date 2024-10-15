@@ -26,5 +26,5 @@ urlpatterns = [
     path('ivaCategory/', include('ivaCategory.urls')),
     path('privileges/', include('privileges.urls')),
     path('supplier/', include('supplier.urls')),
-    
+    path('offer/', include('offer.urls')),    
 ]

@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "ivaCategory",
     "privileges",
     "supplier",
+    "offer",
 ]
 
 MIDDLEWARE = [
