@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "privileges",
     "supplier",
     "offer",
+    "cashClosing",
 ]
 
 MIDDLEWARE = [
