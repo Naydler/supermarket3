@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "offer",
     "cashClosing",
     "corsheaders",
+    "client",
 ]
 
 CORS_ALLOWED_ORIGINS = [
