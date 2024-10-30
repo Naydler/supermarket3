@@ -4,7 +4,7 @@ from django.db import models
 
 class Company (models.Model):
     name = models.CharField(max_length=255)
-    idclient = models.ForeignKey('client.Client', on_delete=models.PROTECT)
+    idclient = models.ForeignKey('client.Client', on_delete=models.PROTECT, default=0)
 
 
     

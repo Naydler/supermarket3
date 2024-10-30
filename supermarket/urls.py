@@ -24,7 +24,7 @@ urlpatterns = [
     path('employee/', include('employee.urls')),
     path('product/', include('product.urls')),
     path('ivaCategory/', include('ivaCategory.urls')),
-    path('privileges/', include('privileges.urls')),
+    path('privilege/', include('privileges.urls')),
     path('supplier/', include('supplier.urls')),
     path('offer/', include('offer.urls')),
     path('cashClosing/', include('cashClosing.urls')),
